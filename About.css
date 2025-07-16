@@ -93,6 +93,22 @@
   color: #555;
 }
 
+/* Developer Credits */
+.developer-credits {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 10px;
+  font-size: 16px;
+  color: #444;
+  background-color: #eef4ff;
+  border-top: 1px solid #d3e0ff;
+  font-weight: 500;
+}
+
+.developer-credits strong {
+  color: #004aad;
+}
+
 /* Responsive Layout */
 @media (min-width: 768px) {
   .about-features {
