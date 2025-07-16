@@ -1,0 +1,101 @@
+.about-page {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f0f4ff, #f9fcff);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-header h1 {
+  font-size: 42px;
+  background: linear-gradient(90deg, #004aad, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #444;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Highlights Section */
+.about-highlights {
+  margin: 60px auto 40px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-highlights h2 {
+  font-size: 28px;
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+.about-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-highlights li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Footer */
+.about-footer {
+  text-align: center;
+  padding: 40px 10px 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .about-features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
