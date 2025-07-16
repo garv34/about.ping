@@ -48,6 +48,10 @@ const About = () => {
         <p>🚀 Built with ❤ for modern education.</p>
         <p>📞 support@pingnote.app</p>
       </div>
+
+      <div className="developer-credits" data-aos="fade-up">
+        <p>👨‍💻 Developed by: <strong>Garv Pathak, Divyansh Varshney, Gaurav Chaudhary, Amit Kumar, Hardeep Beniwal</strong></p>
+      </div>
     </div>
   );
 };
