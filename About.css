@@ -2,9 +2,10 @@
   padding: 50px 20px;
   background: linear-gradient(135deg, #f0f4ff, #f9fcff);
   min-height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header Section */
 .about-header {
   text-align: center;
   margin-bottom: 60px;
@@ -27,12 +28,13 @@
   line-height: 1.6;
 }
 
+/* Features Section */
 .about-features {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 }
 
 .feature-card {
@@ -61,31 +63,94 @@
   line-height: 1.5;
 }
 
-/* Highlights Section */
-.about-highlights {
-  margin: 60px auto 40px;
-  max-width: 800px;
+/* Developer Section */
+.developer-section {
+  margin: 0 auto 60px;
   text-align: center;
 }
 
-.about-highlights h2 {
+.developer-section h2 {
   font-size: 28px;
+  margin-bottom: 30px;
   color: #004aad;
-  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
 }
 
-.about-highlights ul {
-  list-style: none;
-  padding: 0;
+.developer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.about-highlights li {
-  font-size: 18px;
+.dev-card {
+  background: linear-gradient(145deg, #f9faff, #e6f0ff);
+  border-radius: 20px;
+  width: 220px;
+  padding: 30px 25px;
+  box-shadow:
+    6px 6px 10px rgba(163, 177, 198, 0.6),
+    -6px -6px 10px rgba(255, 255, 255, 0.8);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.dev-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow:
+    8px 8px 20px rgba(0, 191, 255, 0.4),
+    -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+.dev-card h3 {
+  font-size: 22px;
+  color: #004aad;
   margin-bottom: 10px;
-  color: #333;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-/* Footer */
+.dev-card p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Initials Avatar */
+.dev-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  user-select: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.dev-card:hover .dev-avatar {
+  transform: scale(1.15);
+  box-shadow: 0 8px 25px rgba(0, 75, 173, 0.6);
+}
+
+/* Footer Section */
 .about-footer {
   text-align: center;
   padding: 40px 10px 20px;
@@ -93,25 +158,16 @@
   color: #555;
 }
 
-/* Developer Credits */
-.developer-credits {
-  text-align: center;
-  margin-top: 30px;
-  padding: 20px 10px;
-  font-size: 16px;
-  color: #444;
-  background-color: #eef4ff;
-  border-top: 1px solid #d3e0ff;
-  font-weight: 500;
-}
-
-.developer-credits strong {
-  color: #004aad;
-}
-
 /* Responsive Layout */
 @media (min-width: 768px) {
   .about-features {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .developer-cards {
+    flex-direction: column;
+    gap: 20px;
   }
 }
