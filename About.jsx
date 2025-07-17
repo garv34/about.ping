@@ -10,6 +10,7 @@ const About = () => {
 
   return (
     <div className="about-page">
+      {/* About Header - Project Info */}
       <div className="about-header" data-aos="fade-down">
         <h1>About Ping Note</h1>
         <p>
@@ -18,6 +19,7 @@ const About = () => {
         </p>
       </div>
 
+      {/* About Features Section */}
       <div className="about-features">
         <div className="feature-card" data-aos="zoom-in">
           <h2>📘 Organize Subjects</h2>
@@ -35,22 +37,52 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-highlights" data-aos="fade-up">
-        <h2>✨ Why Choose Ping Note?</h2>
-        <ul>
-          <li>✅ Fast, clean and responsive experience</li>
-          <li>✅ Secure file storage & smart search</li>
-          <li>✅ Built for modern collaborative education</li>
-        </ul>
+      {/* Developed By Section */}
+      <div className="developer-section" data-aos="fade-up">
+        <h2>Developed By</h2>
+        <div className="developer-cards">
+          <div className="dev-card" data-aos="zoom-in">
+            <div className="dev-avatar initials" style={{ backgroundColor: "#004aad" }}>
+              GP
+            </div>
+            <h3>Garv Pathak</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className="dev-card" data-aos="zoom-in" data-aos-delay="100">
+            <div className="dev-avatar initials" style={{ backgroundColor: "#007bff" }}>
+              AK
+            </div>
+            <h3>Amit Kumar</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div className="dev-card" data-aos="zoom-in" data-aos-delay="200">
+            <div className="dev-avatar initials" style={{ backgroundColor: "#0056b3" }}>
+              GC
+            </div>
+            <h3>Gaurav Chaudhary</h3>
+            <p>Database Specialist</p>
+          </div>
+          <div className="dev-card" data-aos="zoom-in" data-aos-delay="300">
+            <div className="dev-avatar initials" style={{ backgroundColor: "#003d80" }}>
+              DV
+            </div>
+            <h3>Divyansh Varshney</h3>
+            <p>Backend Developer</p>
+          </div>
+          <div className="dev-card" data-aos="zoom-in" data-aos-delay="400">
+            <div className="dev-avatar initials" style={{ backgroundColor: "#00264d" }}>
+              HB
+            </div>
+            <h3>Hardeep Beniwal</h3>
+            <p>Backend Developer</p>
+          </div>
+        </div>
       </div>
 
+      {/* Footer */}
       <div className="about-footer" data-aos="fade-in">
         <p>🚀 Built with ❤ for modern education.</p>
         <p>📞 support@pingnote.app</p>
-      </div>
-
-      <div className="developer-credits" data-aos="fade-up">
-        <p>👨‍💻 Developed by: <strong>Garv Pathak, Divyansh Varshney, Gaurav Chaudhary, Amit Kumar, Hardeep Beniwal</strong></p>
       </div>
     </div>
   );
